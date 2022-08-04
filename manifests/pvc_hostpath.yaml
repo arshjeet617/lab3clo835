@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongo-pvchost
+  name: pvchostpath
 spec:
   resources:
     requests:
@@ -9,4 +9,4 @@ spec:
   
   accessModes:
   - ReadWriteOnce
-  storageClassName: storage_local
+  storageClassName: localstorage
